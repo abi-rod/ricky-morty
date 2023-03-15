@@ -1,0 +1,63 @@
+const [ valueName, setValueName ] = useState("")
+const [ valueType, setValueType ] = useState("")
+const [ valueDimension, setValueDimension ] = useState("")
+const [ valuePopulation, setValuePopulation ] = useState("")
+
+
+
+    return (
+        <form action="" className="inputs_1">
+          <div className="name">
+            <label htmlFor="name-l">Nombre:</label>
+
+            <input 
+              type="text" 
+              name="name" 
+              id="name-l"
+              value={valueName}
+              onChange={(e)=> setValueName(e.target.value)}
+            />
+
+          </div>
+          <div className="type">
+            <label htmlFor="type-l">Tipo:</label>
+
+            <input 
+              type="text" 
+              name="type" 
+              id="type-l"
+              value={valueType}
+              onChange={(e)=> setValueType(e.target.value)}
+            />
+            
+          </div>
+          <div className="dimension">
+            <label htmlFor="dimension-l">Dimensión:</label>
+
+            <input 
+              type="text" 
+              name="dimension" 
+              id="dimencion-l"
+              value={valueDimension}
+              onChange={(e)=> setValueDimension(e.target.value)}
+            />
+            
+          </div>
+          <div >
+            <label className="population" htmlFor="population-l">Población:</label>
+
+            <input 
+              type="text" 
+              name="population" 
+              id="population-l"
+              value={valuePopulation}
+              onChange={(e)=> setValuePopulation(e.target.value)}
+              />
+              
+            
+          </div>
+        </form>
+    )
+}
+
+export default Location;

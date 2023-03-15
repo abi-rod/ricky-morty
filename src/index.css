@@ -1,0 +1,10 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.head{
+  background-color: rgb(255, 145, 0);
+}
